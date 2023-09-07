@@ -24,10 +24,7 @@ html {
   font-family: 'din-next-arabicmd';
   src: url(./assets/fonts/DINNextLTArabic-Medium-4.ttf);
 }
-@font-face {
-  font-family: 'Vanity-Bold';
-  src: url(./assets/fonts/Vanity-Light.ttf);
-}
+
 @font-face {
   font-family: 'SIMPLIFICA';
   src: url(./assets/fonts/SIMPLIFICA_Typeface.ttf);

@@ -169,45 +169,45 @@ waitForImages();
     <div class="grid grid-cols-3 grid-rows-8  grid-flow-row-dense gap-4">
 		<div class="grid col-span-3 row-span-2 gap-4">
 		<div class="col-span-3 row-span-2">
-			<img class="w-full sm:h-40 rounded-lg" src="../assets/finale-2.jpg"  alt="">
+			<img class="w-full sm:h-40 rounded-lg blcandwit" src="../assets/finale-2.jpg"  alt="">
 		</div>
 		</div>
 		<div class="grid gap-4">
 			<div class="col-span-1 row-span-1">
-				<img class=" h-full sm:h-56 rounded-lg" src="../assets/finale.jpg" alt="">
+				<img class=" h-full sm:h-56 rounded-lg blcandwit" src="../assets/finale.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg" src="../assets/cooki2.jpg" alt="">
+				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/cooki2.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg" src="../assets/cooki3.jpg" alt="">
-			</div>
-		</div>
-		<div class="grid gap-4">
-			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg" src="../assets/port3.jpg" alt="">
-			</div>
-			<div class="col-span-1 row-span-1">
-				<img class=" h-full sm:h-56 rounded-lg" src="../assets/infogra.jpg" alt="">
-			</div>
-			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44  rounded-lg" src="../assets/icecream.jpg" alt="">
+				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/cooki3.jpg" alt="">
 			</div>
 		</div>
 		<div class="grid gap-4">
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg" src="../assets/card1.jpg" alt="">
+				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/port3.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg" src="../assets/icecream.jpg" alt="">
+				<img class=" h-full sm:h-56 rounded-lg blcandwit" src="../assets/infogra.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class=" h-full sm:h-56 rounded-lg" src="../assets/cooki.jpg" alt="">
+				<img class="h-full sm:h-44  rounded-lg blcandwit" src="../assets/icecream.jpg" alt="">
+			</div>
+		</div>
+		<div class="grid gap-4">
+			<div class="col-span-1 row-span-1">
+				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/card1.jpg" alt="">
+			</div>
+			<div class="col-span-1 row-span-1">
+				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/oreo.jpg" alt="">
+			</div>
+			<div class="col-span-1 row-span-1">
+				<img class=" h-full sm:h-56 rounded-lg blcandwit" src="../assets/cooki.jpg" alt="">
 			</div>
 		</div>
 		<div class="grid col-span-3 row-span-2 gap-4">
 		<div class="col-span-3 row-span-2">
-			<img class="w-full sm:h-52 rounded-lg" src="../assets/planets.jpg"  alt="">
+			<img class="w-full sm:h-52 rounded-lg blcandwit" src="../assets/planets1.jpg"  alt="">
 		</div>
 		</div>
     </div>
@@ -608,7 +608,14 @@ h4,p{
 	transform-style: preserve-3d;
 	}
 }
-
+.blcandwit{
+	filter: grayscale(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.blcandwit:hover{
+	filter: grayscale(0);
+}
 .info {
 	position: absolute;
 	/* margin-bottom: calc(300px / 8);

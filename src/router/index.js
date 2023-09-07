@@ -13,7 +13,11 @@ const router = createRouter({
       name: 'siteprojects',
       component: () => import('../views/siteProjects.vue')
     } ,
-    
+    {
+      path: '/:catchAll(.*)', 
+      name: '_404',
+      component: () => import('../views/_404.vue')
+    },
   ] 
 })
 

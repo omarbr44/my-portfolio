@@ -174,35 +174,35 @@ waitForImages();
 		</div>
 		<div class="grid gap-4">
 			<div class="col-span-1 row-span-1">
-				<img class=" h-full sm:h-56 rounded-lg blcandwit" src="../assets/finale.jpg" alt="">
+				<img class=" h-full w-full  sm:h-56 rounded-lg blcandwit" src="../assets/finale.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/cooki2.jpg" alt="">
+				<img class="h-full w-full sm:h-44 rounded-lg blcandwit" src="../assets/cooki2.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/cooki3.jpg" alt="">
-			</div>
-		</div>
-		<div class="grid gap-4">
-			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/port3.jpg" alt="">
-			</div>
-			<div class="col-span-1 row-span-1">
-				<img class=" h-full sm:h-56 rounded-lg blcandwit" src="../assets/infogra.jpg" alt="">
-			</div>
-			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44  rounded-lg blcandwit" src="../assets/icecream.jpg" alt="">
+				<img class="h-full w-full sm:h-44 rounded-lg blcandwit" src="../assets/cooki3(2).jpg" alt="">
 			</div>
 		</div>
 		<div class="grid gap-4">
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/card1.jpg" alt="">
+				<img class="h-full w-full sm:h-44 rounded-lg blcandwit" src="../assets/port3.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class="h-full sm:h-44 rounded-lg blcandwit" src="../assets/oreo.jpg" alt="">
+				<img class=" h-full w-full sm:h-56 rounded-lg blcandwit" src="../assets/infogra.jpg" alt="">
 			</div>
 			<div class="col-span-1 row-span-1">
-				<img class=" h-full sm:h-56 rounded-lg blcandwit" src="../assets/cooki.jpg" alt="">
+				<img class="h-full w-full sm:h-44  rounded-lg blcandwit" src="../assets/icecream.jpg" alt="">
+			</div>
+		</div>
+		<div class="grid gap-4">
+			<div class="col-span-1 row-span-1">
+				<img class="h-full w-full sm:h-44 rounded-lg blcandwit" src="../assets/card1.jpg" alt="">
+			</div>
+			<div class="col-span-1 row-span-1">
+				<img class="h-full w-full sm:h-44 rounded-lg blcandwit" src="../assets/oreo.jpg" alt="">
+			</div>
+			<div class="col-span-1 row-span-1">
+				<img class=" h-full w-full sm:h-56 rounded-lg blcandwit" src="../assets/cooki.jpg" alt="">
 			</div>
 		</div>
 		<div class="grid col-span-3 row-span-2 gap-4">

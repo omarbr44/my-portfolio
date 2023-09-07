@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/OB.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Omar Baraja - Website developer | Designer</title>
+    <style>
+     .swiper .swiper-wrapper .swiper-slide .swiper-slide-shadow-coverflow{
+	display: none;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+color: #91fd00;
+font-size: 2.5rem !important;
+}
+.swiper-button-prev, .swiper-button-next{
+  top: var(--swiper-navigation-top-offset, 62%) !important;
+}
+@media (max-width: 1024px) { 
+  .swiper-button-prev::after, .swiper-button-next::after{
+font-size: 1.8rem !important;
+}
+}
+@media (max-width: 640px) { 
+  .swiper-button-prev::after, .swiper-button-next::after{
+font-size: 1.3rem !important;
+}
+}
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    
+  </body>
+</html>

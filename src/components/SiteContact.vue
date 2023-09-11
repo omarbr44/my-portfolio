@@ -16,7 +16,7 @@
             <div class="px-4 mx-auto my-9 text-center flex flex-row items-center lg:px-3 justify-center">
           <div class="flex flex-wrap  items-center  text-gray-500 sm:justify-center ">
             <a title="Gmail" class="icons1 "  rel="noopener"  href="mailto:ibarbo4444@gmail.com" target="_blank">
-                <svg height="30px" width="30px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                <svg class=" sm:h-5 sm:w-6" height="30px" width="30px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512"  xml:space="preserve">
 <g>
 	<path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345
@@ -36,7 +36,7 @@
 </svg>
             </a>
             <a title="Twitter" class="icons1 mx-7"  rel="noopener"  href="https://twitter.com/Ob_4O" target="_blank">
-                <svg width="30px" height="30px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" stroke="#fff">
+                <svg class=" sm:h-5 sm:w-6" width="30px" height="30px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" stroke="#fff">
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
@@ -47,7 +47,7 @@
 </svg>
             </a> 
             <a title="whatsapp" class="icons1 "  rel="noopener"  href="https://wa.me/+967772667264" target="_blank">
-                <svg width="30px" height="30px" fill="#fff" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <svg class=" sm:h-5 sm:w-6" width="30px" height="30px" fill="#fff" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
   <g id="Layer_2" data-name="Layer 2">
     <g id="invisible_box" data-name="invisible box">
       <rect width="48" height="48" fill="none"/>
@@ -61,7 +61,7 @@
   </g>
 </svg>            </a>
             <a title="Behance" class="icons1 ml-7" rel="noopener"  href="https://behance.net/ibarbo44448c10" target="_blank">
-                <svg width="33px" height="33px" viewBox="0 -3.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class=" sm:h-5 sm:w-6" width="33px" height="33px" viewBox="0 -3.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
     <title>behance [#163]</title>
     <desc>Created with Sketch.</desc>
@@ -78,6 +78,9 @@
         </g>
     </g>
 </svg>
+          </a>
+            <a title="github" class="icons1 ml-7" rel="noopener"  href="https://github.com/omarbr44/" target="_blank">
+              <svg class="sm:h-5 sm:w-6" width="30px" height="30px" viewBox="0 0 50 50" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"><defs></defs><path class="st0" d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"/></svg>   
           </a>
                    
           </div>
@@ -97,7 +100,7 @@
   font-family: 'din-next-arabicmd';
 }
 .icons1:hover::before{
-  transform: scale(2);
+  transform: scale(1.6);
 }
 .icons1:hover svg,.icons1:hover .st0 {
     fill: #000 !important;
@@ -122,5 +125,9 @@
     z-index: 10;
     transition: fill .25s ease-in-out;
 }
-
+@media (max-width:640px){
+  .icons1:hover::before{
+  transform: scale(1.5);
+}
+}
 </style>

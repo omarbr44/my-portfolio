@@ -6,6 +6,7 @@
 
   onMounted (()=>{
   AOS.init()
+  
 })
 </script>
 <template>

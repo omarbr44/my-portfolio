@@ -63,9 +63,11 @@
 <section class="">
     <div data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="700" class=" mx-auto text-center lg:px-52 lg:pt-10 md:px-20 md:pt-32 sm:px-5 sm:pt-20 pb-40 sm:pb-20">
+     data-aos-duration="1000" class=" mx-auto text-center lg:px-52 lg:pt-10 md:px-20 md:pt-32 sm:px-5 sm:pt-32 pb-40 sm:pb-20 bk-img">
        
-<div id="toast-default" class="ml-auto mr-auto flex items-center justify-end w-full sm:w-3/4 max-w-xs p-4 sm:p-2 sm:py-4 text-gray-500 bg-white rounded-lg shadow md:mb-5 sm:mb-7" role="alert">
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000" id="toast-default" class="ml-auto mr-auto flex items-center justify-end w-full sm:w-3/4 max-w-xs p-4 sm:p-2 sm:py-4 text-gray-500 bg-white rounded-lg shadow md:mb-5 sm:mb-7" role="alert">
   <div class="ml-3 text-sm font-normal">
   <h1 class="text-lg">بمناسبة افتتاح الموقع </h1>
         <p
@@ -87,21 +89,36 @@
 </div>
 </div>
 
-        <h1 class="mb-5 h-auto text-5xl font-normal tracking-tight leading-none md:text-5xl lg:text-9xl bg-gradient-to-r from-white to-to-heading inline-block bg-clip-text text-transparent" style="line-height: 1.5;">
+        <h1 class="mb-1 h-auto text-6xl font-normal tracking-tight leading-none md:text-7xl lg:text-9xl bg-gradient-to-r from-white to-to-heading inline-block bg-clip-text text-transparent" style="line-height: 1.5;">
              لـنـحـكـي<br> قــــــصــــــتــــــك
         </h1>
+       
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">بأسلوبنا الخاص</p>
-    
-    </div>
+        <div >
+        <svg class="ml-auto mr-auto" 
+          width="30px" viewBox="0 0 14.334 24.75" >
+            <circle class="circle-1" fill="white" cx="7.167" cy="6" r="1.2"/>
+            <circle class="circle-2" fill="white" cx="7.167" cy="6" r="1.2"/>
+          <path stroke="white" fill="transparent" d="M7.167,0.5C3.485,0.5,0.5,3.485,0.5,7.167v10.416                   c0,3.682,2.985,6.667,6.667,6.667s6.667-2.985,6.667-6.667V7.167C13.834,3.485,10.849,0.5,7.167,0.5z"/>
+        </svg>
+        <p class="text-white my-1">انزل لتكملة القصة</p>
+      </div>
+      </div>
      <div data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="600" class="mb-8 lg:mb-16 sm:mb-1 text-center text-white">
+     data-aos-duration="1000" class="mb-8 lg:mb-16 sm:mb-1 text-center mt-24 p-5  text-white">
       <h4  class="text-3xl sm:text-lg text-anim " >{{ content }}</h4>
       <p  class="text-xl sm:text-lg mt-8 mx-6" >جميع هذه العوامل هي ما يدفعنا في كل مرة لتخطي حدودنا وإبهار عملائنا</p>
       <p  class="text-lg sm:text-sm text-gray-500" >بالعامية : نخليك تقول وااو </p>
         </div> 
 </section>
-  
+  <div class="txt-scm p-3 pb-52 flex justify-center  w-full">
+    <p class="text-2xl text-white mx-3  order-3 aaa" >الخروج</p>
+    <p class="text-2xl text-white mx-3 order-1 aaa2">خارج</p>
+    <p class="text-2xl text-white mx-3 order-2 aaa3">الصندوق</p>
+    <p class="text-2xl text-white mx-3 order-5 aaa4">يحتاج</p>
+    <p class="text-2xl text-white mx-3 order-4 aaa5">الى</p>
+  </div>
 </section>
 </template>
 
@@ -111,6 +128,33 @@ import { ref,onMounted } from 'vue';
 const content = ref('الرغبة القوية لصنع تغيير')
 
 onMounted(()=>{
+  const { gsap} = window;
+  gsap.registerPlugin('ScrollTrigger');
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.txt-scm',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: true
+    }
+  })
+
+tl.to(".aaa", {
+  order: 5
+});
+tl.to(".aaa2", {
+  order: 4
+});
+tl.to(".aaa3", {
+  order: 3
+});
+tl.to(".aaa4", {
+  order: 2
+});
+tl.to(".aaa5", {
+  order: 1
+});
   
   setInterval(() => {
     updateContent();
@@ -141,7 +185,43 @@ h1,h2,h3,h4,h5{
 p{
   font-family: 'din-next-arabicmd';
 }
+.bk-img{
+  background-image: url(https://images.unsplash.com/photo-1530533718754-001d2668365a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+}
+.bk-img::before{
+  content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		z-index: -1;
+		opacity:0.8;
+}
+.circle-1, .circle-2 {
+  animation: scroll 2s infinite linear;
+  opacity:0;
+}
 
+.circle-2{
+  animation-delay: 1s;
+}
+
+@keyframes scroll {
+  0% {
+    cy: 4;
+    opacity: 0;
+  }
+  45%, 55% {
+    opacity: 1;
+    cy: 9;
+  }
+  100% {
+    cy: 14;
+    opacity: 0;
+  }
+}
 .abb {
   display: flex; 
   justify-content: center;
@@ -150,6 +230,7 @@ p{
   min-height: 100vh;
   overflow: hidden;
   position: absolute;
+  z-index: 2;
 }
 .glowing {
   position: relative;

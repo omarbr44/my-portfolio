@@ -1,13 +1,13 @@
 <template>
   
-  <div v-if="bloc" class="fixed z-50 right-0">
-    <div class="flex flex-col items-end p-5 bg-site-primary w-fit rounded-lg" >
-      <a href="#home">
+  <div v-if="bloc" class="fixed w-full h-screen z-50 right-0">
+    <div style="--tw-bg-opacity: 0.6;" class="flex flex-col p-5 bg-site-primary w-full h-screen justify-center items-center rounded-lg " >
+      <a @click="showblock" href="#home">
        <h3 class="text-white text-2xl mb-5 sm:text-lg">البداية</h3> 
       </a>
-      <a href="#service"><h3 class="text-white text-2xl sm:text-lg mb-5">خدماتنا</h3> </a>
-      <a href="#work"><h3 class="text-white text-2xl sm:text-lg mb-5">اعمالنا</h3> </a>
-      <a href="#conta"><h3 class="text-white text-2xl sm:text-lg mb-5">تواصل معنا</h3> </a>
+      <a @click="showblock" href="#service"><h3 class="text-white text-2xl sm:text-lg mb-5">خدماتنا</h3> </a>
+      <a @click="showblock" href="#work"><h3 class="text-white text-2xl sm:text-lg mb-5">اعمالنا</h3> </a>
+      <a @click="showblock" href="#conta"><h3 class="text-white text-2xl sm:text-lg mb-5">تواصل معنا</h3> </a>
     </div>
   </div>
   <div  class="fixed right-0 z-30 p-4 rounded-md ">

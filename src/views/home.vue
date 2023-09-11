@@ -11,8 +11,40 @@ import { Navigation } from 'swiper/modules';
 import { RouterLink } from 'vue-router';
 
 onMounted(()=>{
+	if(screen.width >1024){
+		jQuery(document).ready(function() {
+	
+	var mouseX = 0, mouseY = 0;
+	var xp = 0, yp = 0;
+	 
+	$(document).mousemove(function(e){
+	  mouseX = e.pageX - 30;
+	  mouseY = e.pageY - 30; 
+	});
+	  
+	setInterval(function(){
+	  xp += ((mouseX - xp)/6);
+	  yp += ((mouseY - yp)/6);
+	  $("#circle").css({left: xp +'px', top: yp +'px'});
+	}, 20);
+	
+	});
+	}
 
-    const { gsap, imagesLoaded } = window;
+    const { gsap, imagesLoaded,  } = window;
+	const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
 
 const cardsContainerEl = document.querySelector(".cards__wrapperr");
 const cardInfosContainerEl = document.querySelector(".info__wrapper");
@@ -114,11 +146,6 @@ const waitForImages = () => {
 		translateY: "40px",
 		opacity: 0,
 	});
-	/* gsap.set([buttons.prev, buttons.next], {
-		pointerEvents: "none",
-		opacity: "0",
-	}); */
-
 	images.forEach((image) => {
         
 		imagesLoaded(image, (instance) => {
@@ -152,6 +179,7 @@ waitForImages();
 
 </script>
 <template>
+	<span id="circle" class="circle"></span>
     <div class="bg-site-primary" > 
 <SiteNavBar />
 <SiteHero id="home" />
@@ -408,6 +436,7 @@ waitForImages();
 .pacman .bottom{-webkit-animation:animbottom 0.5s infinite;animation:animbottom 0.5s infinite}
 @-webkit-keyframes animbottom{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(45deg);transform:rotate(45deg)}}
 @keyframes animbottom{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}50%{-webkit-transform:rotate(45deg);transform:rotate(45deg)}}
+
 
 .scrollbar {
             height: 700px;
@@ -761,6 +790,17 @@ h4,p{
     .cardList {
      width: calc(3 * 250px);
     }
+}
+@media (min-width: 1024px) {
+	.circle {
+	z-index: 3;
+	position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 20px #91fd00, 0 0 40px rgba(0,226,255,1), 0 0 60px rgba(0,226,255,1), 0 0 80px rgba(0,226,255,1), 0 0 0 8px rgba(0,226,255,.1);
+}
 }
 
 

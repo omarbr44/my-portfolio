@@ -101,7 +101,7 @@
             <circle class="circle-2" fill="white" cx="7.167" cy="6" r="1.2"/>
           <path stroke="white" fill="transparent" d="M7.167,0.5C3.485,0.5,0.5,3.485,0.5,7.167v10.416                   c0,3.682,2.985,6.667,6.667,6.667s6.667-2.985,6.667-6.667V7.167C13.834,3.485,10.849,0.5,7.167,0.5z"/>
         </svg>
-        <p class="text-white my-1">انزل لتكملة القصة</p>
+        <p class="text-white my-1">انزل لتحرير الأفكار من خارج الصندوق</p>
       </div>
       </div>
      <div data-aos="fade-down"
@@ -112,13 +112,21 @@
       <p  class="text-lg sm:text-sm text-gray-500" >بالعامية : نخليك تقول وااو </p>
         </div> 
 </section>
-  <div class="txt-scm p-3 pb-52 flex justify-center  w-full">
-    <p class="text-2xl text-white mx-3  order-3 aaa" >الخروج</p>
-    <p class="text-2xl text-white mx-3 order-1 aaa2">خارج</p>
-    <p class="text-2xl text-white mx-3 order-2 aaa3">الصندوق</p>
-    <p class="text-2xl text-white mx-3 order-5 aaa4">يحتاج</p>
-    <p class="text-2xl text-white mx-3 order-4 aaa5">الى</p>
+  <!-- <div class="txt-scm p-3 pb-22 w-full bg-white">
+<div class="lll mb-10 text-8xl md:text-6xl sm:text-4xl">
+    <p id="text1" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl" >الإبداع</p>
   </div>
+  <div class="lll mb-10">
+    <p id="text2" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl">الخيال</p>
+  </div>
+  <div class="lll mb-10">
+    <p id="text3" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl">الطموح</p>
+</div>
+  <div class="lll mb-10">
+    <p id="text4" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl">المهارة</p>
+</div>
+ 
+  </div> -->
 </section>
 </template>
 
@@ -128,33 +136,74 @@ import { ref,onMounted } from 'vue';
 const content = ref('الرغبة القوية لصنع تغيير')
 
 onMounted(()=>{
-  const { gsap} = window;
+ /*  const { gsap} = window;
   gsap.registerPlugin('ScrollTrigger');
 
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.txt-scm',
+      trigger: '#text1',
       start: 'top center',
       end: 'bottom center',
+      delay: 0.2,
+       stagger: 0.05,
+            delay: 0.2,
+            duration: 0.3,
       scrub: true
     }
   })
-
-tl.to(".aaa", {
-  order: 5
+  let tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#text2',
+      start: 'top center',
+      end: 'bottom center',
+      delay: 0.2,
+       stagger: 0.05,
+            delay: 0.2,
+            duration: 0.3,
+      scrub: true
+    }
+  })
+  let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#text3',
+      start: 'top center',
+      end: 'bottom center',
+      delay: 0.2,
+       stagger: 0.05,
+            delay: 0.2,
+            duration: 0.3,
+      scrub: true
+    }
+  })
+  let tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#text4',
+      start: 'top center',
+      end: 'bottom center',
+      delay: 0.2,
+       stagger: 0.05,
+            delay: 0.2,
+            duration: 0.3,
+      scrub: true
+    }
+  })
+  tl.to("#text1", {
+  y:0,
+  x:50
 });
-tl.to(".aaa2", {
-  order: 4
+  tl2.to("#text2", {
+  y:0,
+  x:-50
 });
-tl.to(".aaa3", {
-  order: 3
+  tl3.to("#text3", {
+  y:0,
+  x:50
 });
-tl.to(".aaa4", {
-  order: 2
+  tl4.to("#text4", {
+  y:0,
+  x:-50
 });
-tl.to(".aaa5", {
-  order: 1
-});
+ */
   
   setInterval(() => {
     updateContent();
@@ -179,6 +228,32 @@ tl.to(".aaa5", {
 </script>
 
 <style scoped>
+.lll {
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  #text1,#text2,#text3,#text4{
+    transform: translateY(115px);
+    transition: transform .5s;
+    line-height: 1.5;
+
+}
+
+.aaa{
+/*   transform: translate(8rem,3rem)
+ */
+ left: 80%;
+}
+.aaa2{
+  left: 60%;
+
+}
+.aaa3{
+  left: 40%;
+}
+.aaa4{
+  left: 20%;
+}
 h1,h2,h3,h4,h5{
   font-family: 'din-next-arabic';
 }

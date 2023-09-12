@@ -16,6 +16,10 @@
 <style>
 html {
   scroll-behavior: smooth;
+  
+}
+body{
+  overflow-x: hidden;
 }
 @font-face {
   font-family: 'din-next-arabic';

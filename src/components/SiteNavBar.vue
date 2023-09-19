@@ -5,6 +5,7 @@
       <a @click="showblock" href="#home">
        <h3 class="text-white text-2xl mb-5 sm:text-lg">البداية</h3> 
       </a>
+      <a @click="showblock" href="#who"><h3 class="text-white text-2xl sm:text-lg mb-5">من نحن</h3> </a>
       <a @click="showblock" href="#service"><h3 class="text-white text-2xl sm:text-lg mb-5">خدماتنا</h3> </a>
       <a @click="showblock" href="#work"><h3 class="text-white text-2xl sm:text-lg mb-5">اعمالنا</h3> </a>
       <a @click="showblock" href="#conta"><h3 class="text-white text-2xl sm:text-lg mb-5">تواصل معنا</h3> </a>

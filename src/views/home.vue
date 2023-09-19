@@ -1,7 +1,6 @@
 <script setup>
 import SiteNavBar from '../components/SiteNavBar.vue';
 import SiteHero from '../components/SiteHero.vue';
-import SiteAbout from '../components/SiteAbout.vue';
 import SiteContact from '../components/SiteContact.vue';
 import { onMounted, ref } from 'vue';
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -11,6 +10,7 @@ import { Navigation } from 'swiper/modules';
 import { RouterLink } from 'vue-router';
 
 onMounted(()=>{
+	
 	if(screen.width >1024){
 		jQuery(document).ready(function() {
 	
@@ -32,19 +32,6 @@ onMounted(()=>{
 	}
 
     const { gsap, imagesLoaded,  } = window;
-	const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
 
 const cardsContainerEl = document.querySelector(".cards__wrapperr");
 const cardInfosContainerEl = document.querySelector(".info__wrapper");
@@ -61,8 +48,7 @@ function updateCard(e) {
 	gsap.set(card, {
 		"--current-card-rotation-offset": `${angle}deg`,
 	});
-/* 	const currentInfoEl = document.querySelectorAll(".current--info");
- */	
+
    gsap.set(cardtext, {
 		rotateY: `${angle}deg`,
 	});
@@ -122,15 +108,6 @@ function init() {
 		opacity: 1,
 		translateY: 0,
 	})
-		/* .to(
-		[buttons.prev, buttons.next],
-		{
-			duration: 0.4,
-			opacity: 1,
-			pointerEvents: "all",
-		},
-		"-=0.4"
-	); */
 }
 
 const waitForImages = () => {
@@ -179,11 +156,10 @@ waitForImages();
 
 </script>
 <template>
-	<span id="circle" class="circle"></span>
+	<span id="circle" class="circlee"></span>
     <div class="bg-site-primary" > 
 <SiteNavBar />
 <SiteHero id="home" />
-<SiteAbout id="service" />
 	<div id="work" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="400" class=" flex flex-row justify-around items-center ">
@@ -282,7 +258,7 @@ waitForImages();
   }"
   :pagination="true"
   >
-  <swiper-slide>
+  <swiper-slide class="h-auto">
 
   <RouterLink 
                     :to="{
@@ -391,7 +367,7 @@ waitForImages();
 <div class="min-h-screen ">
 	<div class="loader" >
       <div class="circles">
-        <span class="one"></span>
+        <span class="one" style="background: white !important;"></span>
         <span class="two"></span>
         <span class="three"></span>
       </div>
@@ -458,6 +434,7 @@ waitForImages();
            background-clip: content-box;
             background-color: #91fd00;
         }
+
 * {
 	box-sizing: border-box;
 }
@@ -503,9 +480,6 @@ h4,p{
   bottom: 4px;
 }
 .swiper-slide {
-  /* text-align: center;
-  font-size: 18px; */
-  /* background: #fff; */
 
   /* Center slide text vertically */
   display: flex;
@@ -515,8 +489,6 @@ h4,p{
 
 .swiper-slide .card {
   display: block;
- /*  width: 100%; */
-  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -575,9 +547,7 @@ h4,p{
     transition: fill .25s ease-in-out;
 }
 
-.card {
-	/* --card-translateY-offset: 100vh; */
-	
+.card {	
 	transform: rotateY(var(--card-rotation-offset))
 		scale(var(--card-scale-offset));
 	
@@ -647,14 +617,11 @@ h4,p{
 }
 .info {
 	position: absolute;
-	/* margin-bottom: calc(300px / 8);
-	margin-left: calc(200px / 1.5); */
 	transform: translateZ(2rem);
 	transition: transform 800ms
 		ease;
 	.text {
 		position: relative;
-		/* font-size: calc(200px * var(--text-size-offset, 0.2)); */
 		white-space: nowrap;
 		color: #fff;
 		width: fit-content;
@@ -737,7 +704,7 @@ h4,p{
 	}
 	.card{
 		width: 11rem;
-		height: 100%;
+		
 	}
 	.scrollbar {
             height: 300px;
@@ -792,7 +759,7 @@ h4,p{
     }
 }
 @media (min-width: 1024px) {
-	.circle {
+	.circlee {
 	z-index: 3;
 	position: absolute;
     width: 13px;

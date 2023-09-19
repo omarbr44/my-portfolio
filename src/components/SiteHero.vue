@@ -1,5 +1,5 @@
 <template>
-    <section >
+    <section class=" overflow-auto">
         <div class="abb">
         <div class="glowing">
     
@@ -40,7 +40,7 @@
     <span style="--i:3;"></span>
     
   </div>
-  <div class="glowing">
+  <div class="glowing sm:hidden">
     
     <span style="--i:1;"></span>
     
@@ -49,7 +49,7 @@
     <span style="--i:3;"></span>
     
   </div>
-  <div class="glowing">
+  <div class="glowing sm:hidden">
     
     <span style="--i:1;"></span>
     
@@ -60,7 +60,7 @@
   </div>
 </div>
 
-<section class="">
+<section >
     <div data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1000" class=" mx-auto text-center lg:px-52 lg:pt-10 md:px-20 md:pt-32 sm:px-5 sm:pt-32 pb-40 sm:pb-20 bk-img">
@@ -104,157 +104,223 @@
         <p class="text-white my-1">انزل لتحرير الأفكار من خارج الصندوق</p>
       </div>
       </div>
-     <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000" class="mb-8 lg:mb-16 sm:mb-1 text-center mt-24 p-5  text-white">
-      <h4  class="text-3xl sm:text-lg text-anim " >{{ content }}</h4>
-      <p  class="text-xl sm:text-lg mt-8 mx-6" >جميع هذه العوامل هي ما يدفعنا في كل مرة لتخطي حدودنا وإبهار عملائنا</p>
-      <p  class="text-lg sm:text-sm text-gray-500" >بالعامية : نخليك تقول وااو </p>
-        </div> 
 </section>
-  <!-- <div class="txt-scm p-3 pb-22 w-full bg-white">
-<div class="lll mb-10 text-8xl md:text-6xl sm:text-4xl">
-    <p id="text1" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl" >الإبداع</p>
+<section class="bg-white pt-10" id="who">
+  <div class=" lg:h-screen h-auto" >
+  <div class="container">
+  <div class="txt-scm p-3 w-full flex justify-evenly flex-wrap" >
+<div class="lll mb-10 text-8xl md:text-6xl sm:text-4xl lg:w-1/3">
+  <div id="text1" class="bg-black flex justify-center items-center p-16 w-60 sm:w-60 sm:h-20 ml-auto mr-auto rounded-lg about-img" style="background-size: cover;background-image: url(https://images.unsplash.com/photo-1598160882026-6e61d16dc8c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80);">
+    <p  class=" text-white mb-5 text-center aaa text-5xl md:text-6xl sm:text-4xl [text-shadow:1px_2px_3px_black]" >الإبداع</p>
   </div>
-  <div class="lll mb-10">
-    <p id="text2" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl">الخيال</p>
   </div>
-  <div class="lll mb-10">
-    <p id="text3" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl">الطموح</p>
+  <div class="lll mb-10 text-8xl md:text-6xl sm:text-4xl lg:w-1/3">
+  <div id="text2" class="bg-black flex justify-center items-center p-16 w-60 sm:w-60 sm:h-20 ml-auto mr-auto rounded-lg about-img" style="background-size: cover;background-image: url(https://images.unsplash.com/photo-1594615191670-84164b5355c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80);">
+    <p  class=" text-white mb-5 text-center aaa text-5xl md:text-6xl sm:text-4xl [text-shadow:1px_2px_3px_black]" >الطموح</p>
+  </div>
+  </div>
+  <div class="lll mb-10 text-8xl md:text-6xl sm:text-4xl lg:w-1/3">
+  <div id="text3" class="bg-black flex justify-center items-center p-16 w-60 sm:w-60 sm:h-20 ml-auto mr-auto rounded-lg about-img" style="background-size: cover;background-image: url(https://images.unsplash.com/photo-1594531405613-de69af2ee1ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80);">
+    <p  class=" text-white mb-5 text-center aaa text-5xl md:text-6xl sm:text-4xl [text-shadow:1px_2px_3px_black]" >الإلتزام</p>
+  </div>
+  </div>
 </div>
-  <div class="lll mb-10">
-    <p id="text4" class=" text-black mb-5 text-center aaa text-8xl md:text-6xl sm:text-4xl">المهارة</p>
 </div>
- 
-  </div> -->
+</div>
+
+<div class="words-sec mb-40 sm:mb-20 container flex flex-col">
+  <h1 class=" text-6xl text-right">*</h1>
+  <h1 id="target"  style="direction: rtl;" class=" text-xl text-center text-site-primary sm:text-lg px-20 sm:px-1" 
+  >
+  جميع
+  هذه
+  البطاقات
+  هي
+  ما
+  تدفعنا
+  في
+  كل
+  مرة
+  لتخطي
+  حدودنا 
+       وإبهار 
+       عملائنا
+<br>
+       وهذا هو سبب اختيارهم لنا
+
+  
+      </h1>
+      <h1 class=" text-6xl text-left mt-8">*</h1>
+</div>
+<div class="h-32">
+
+</div>
+<section class="about-sec mb-36 pb-8 mt-28 " id="service">
+<div class="flex">
+<div class=" w-1/2 sm:w-full h-screen sm:absolute" style="height:400vh;">
+<div>
+<div class="left-imgs">
+  <div style="position: absolute;
+		left: 0;
+		top: -8.4rem;
+		width: 100%;
+		height: 105vh;
+		background: #000;
+		z-index: -1;
+		opacity:0.6;">
+
+  </div>
+  <img style="height: 105vh;
+    position: absolute;
+    top: -8.4rem;"  class="-z-10 shadow-md sm:w-full sm:h-36" src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="">
+  <div class=" absolute w-full sm:hidden">
+    <div class=" flex flex-col justify-center items-center px-10">
+    <img class=" w-20  mb-4" src="../assets/OB.png" alt="">
+    <div class=" bg-white w-2 h-32 rotate-90 mb-5"></div>
+    <h1 class=" text-white text-5xl text-center"> خدماتنا الرهيبة</h1> 
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="right-block sm:w-full w-1/2" style="height: 400vh;">
+ <div class=" container">
+  <div class="right-block-1">
+    <div class="  justify-center items-center px-10 hidden sm:flex">
+      <div class="w-1/3">
+    <img class=" w-12 ml-auto mr-auto" src="../assets/OB.png" alt="">
+  </div>
+  <div class="w-1/3">
+    <div class=" bg-white w-1 h-20 ml-auto mr-auto"></div>
+  </div>
+    <h1 class="w-1/3 text-white text-2xl text-center"> خدماتنا الرهيبة</h1> 
+    </div>
+    <div class="overflow-hidden my-10">
+      <div class="lg:text-2xl text-xl text-center right-txt sm:text-white" > تطوير المواقع الشخصية والتجارية </div>
+    </div>
+    <div class="overflow-hidden my-10 flex justify-center items-center">
+      <div class="text-4xl text-center bg-site-primary w-4 h-4 sm:w-2 sm:h-2 rounded-lg mx-3 right-txt sm:bg-white" > </div>
+      <div class="text-4xl text-center bg-site-primary w-4 h-4 sm:w-2 sm:h-2 rounded-lg mx-3 right-txt sm:bg-white" > </div>
+      <div class="text-4xl text-center bg-site-primary w-4 h-4 sm:w-2 sm:h-2 rounded-lg mx-3 right-txt sm:bg-white" > </div>
+    </div>
+    <div class="overflow-hidden my-10">
+      <div class=" text-center lg:text-2xl text-xl right-txt sm:text-white " > تصاميم السوشل ميديا والاعلانات  لجذب العملاء</div>
+    </div>
+    <div class="overflow-hidden my-10 flex justify-center items-center">
+      <div class="text-4xl text-center bg-site-primary w-4 h-4 sm:w-2 sm:h-2 rounded-lg mx-3 right-txt sm:bg-white" > </div>
+      <div class="text-4xl text-center bg-site-primary w-4 h-4 sm:w-2 sm:h-2 rounded-lg mx-3 right-txt sm:bg-white" > </div>
+      <div class="text-4xl text-center bg-site-primary w-4 h-4 sm:w-2 sm:h-2 rounded-lg mx-3 right-txt sm:bg-white" > </div>
+    </div>
+      <div class="overflow-hidden my-10">
+        <div class=" text-center lg:text-2xl text-xl right-txt sm:text-white" >إدارة حسابات السوشل ميديا من الألف الى الياء</div>
+      </div>
+      
+  </div>
+ </div>
+</div>
+</div>
+</section>
+
+</section>
 </section>
 </template>
 
 <script setup>
-import { ref,onMounted } from 'vue';
-
-const content = ref('الرغبة القوية لصنع تغيير')
+import { onMounted } from 'vue';
 
 onMounted(()=>{
- /*  const { gsap} = window;
+  const { gsap,SplitType} = window;
   gsap.registerPlugin('ScrollTrigger');
+
+  const text = new SplitType('#target', { types: 'words' })
 
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '#text1',
-      start: 'top center',
-      end: 'bottom center',
-      delay: 0.2,
-       stagger: 0.05,
-            delay: 0.2,
-            duration: 0.3,
-      scrub: true
+      trigger: '.txt-scm',
+      start: "top 20% ",
+       end: "bottom 20%",
+      pin: '.txt-scm',
+      scrub: 1,
+      marks:true
     }
   })
-  let tl2 = gsap.timeline({
+  let divv = gsap.utils.toArray(".lll div");
+
+  let transitionDuration = 2;
+let stayDuration = 1.6;
+divv.forEach((div, i) => {
+  let  time = (transitionDuration + stayDuration) * i;
+      tl.fromTo([div], { y: 250}, { y: 0, stagger: 2.5});
+});
+let tl1 = gsap.timeline({
     scrollTrigger: {
-      trigger: '#text2',
-      start: 'top center',
-      end: 'bottom center',
-      delay: 0.2,
-       stagger: 0.05,
-            delay: 0.2,
-            duration: 0.3,
-      scrub: true
+      trigger: '.words-sec',
+      end: "2%",
     }
   })
-  let tl3 = gsap.timeline({
+  let words = gsap.utils.toArray(".word");
+  words.forEach((word, i) => {
+    let  time = 0.1 * i;
+    tl1.fromTo([word], { opacity: 0,perspective: 1000,rotationX:-90}, { opacity: 1,perspective: 1000,rotationX:0, stagger: 0.2}, time);   
+  });
+  tl1.to({}, {duration: stayDuration}); // dummy tween to fill space at the end.
+
+
+var containers = gsap.utils.toArray(".overflow-hidden div");
+
+let tl3 = gsap.timeline({
     scrollTrigger: {
-      trigger: '#text3',
-      start: 'top center',
-      end: 'bottom center',
-      delay: 0.2,
-       stagger: 0.05,
-            delay: 0.2,
-            duration: 0.3,
-      scrub: true
+      trigger: '.right-block',
+      start: "top 20% ",
+       end: "bottom bottom",
+      pin: '.right-block-1',
+      scrub: 1,
     }
   })
-  let tl4 = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#text4',
-      start: 'top center',
-      end: 'bottom center',
-      delay: 0.2,
-       stagger: 0.05,
-            delay: 0.2,
-            duration: 0.3,
-      scrub: true
-    }
-  })
-  tl.to("#text1", {
-  y:0,
-  x:50
+
+containers.forEach((div) => {
+      tl3.to([div], { x:0, y:0,z:0, stagger: 0.5});
 });
-  tl2.to("#text2", {
-  y:0,
-  x:-50
+
+ScrollTrigger.create({
+  trigger: '.right-block',
+  start: 'top 20%',
+  end: 'bottom bottom',
+  pin: '.left-imgs',
 });
-  tl3.to("#text3", {
-  y:0,
-  x:50
-});
-  tl4.to("#text4", {
-  y:0,
-  x:-50
-});
- */
-  
-  setInterval(() => {
-    updateContent();
-  }, 2000);
+
 
 }) 
-  
-   const updateContent = ()=> {
-      switch (content.value) {
-        case 'الرغبة القوية لصنع تغيير':
-          content.value = 'الرغبة في القيام بأشياء عظيمة';
-          break;
-        case 'الرغبة في القيام بأشياء عظيمة':
-        content.value = 'الرغبة في ان تكون فريدا';
-          break;
-        case 'الرغبة في ان تكون فريدا':
-        content.value = 'الرغبة القوية لصنع تغيير';
-          break;
-      }
-    }
-  
 </script>
 
 <style scoped>
-.lll {
+.clipped{
+  transition: .5s ease ;
+  clip-path: polygon(0% 0%, 73.5% 0%, 73.5% 32.75%, 0% 32.75%, 0% 0%, 100% 36.75%, 100% 70%, 29.5% 70%, 29.5% 36.75%, 100% 36.75%, 0% 0%, 0% 100%, 0% 73.75%, 73.5% 73.75%, 73.5% 100%, 0% 100%);
+}
+.outrtclip:hover .clipped{
+  clip-path: polygon(0% 0%, 73.5% 0%, 73.5% 32.75%, 0% 32.75%, 0% 0%, 73.75% 36.88%, 73.62% 70.13%, 0.04% 70.13%, 0% 36.88%, 73.5% 36.75%, 0% 0%, 0% 100%, 0% 73.75%, 73.5% 73.75%, 73.5% 100%, 0% 100%);
+}
+  .lll {
     text-transform: uppercase;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   #text1,#text2,#text3,#text4{
-    transform: translateY(115px);
+    transform: translateY(100px);
     transition: transform .5s;
     line-height: 1.5;
-
+}
+.word{
+  transform-origin: bottom;
+    transition: transform .5s;
+    line-height: 1.5;
+}
+.moveleft{
+    transition: transform 0.3s;
+    filter: drop-shadow(-1px -2px 2px #0c0c0c);
 }
 
-.aaa{
-/*   transform: translate(8rem,3rem)
- */
- left: 80%;
-}
-.aaa2{
-  left: 60%;
-
-}
-.aaa3{
-  left: 40%;
-}
-.aaa4{
-  left: 20%;
-}
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5, .overflow-hidden div{
   font-family: 'din-next-arabic';
 }
 p{
@@ -263,7 +329,7 @@ p{
 .bk-img{
   background-image: url(https://images.unsplash.com/photo-1530533718754-001d2668365a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
 }
-.bk-img::before{
+.bk-img::before,.bk-img1::before{
   content: "";
 		position: absolute;
 		left: 0;
@@ -421,5 +487,8 @@ p{
   100% {
     background-position: -500%;
   }
+}
+.right-txt{
+  will-change: transform; transform: translate3d(0px, 200%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
 }
 </style>

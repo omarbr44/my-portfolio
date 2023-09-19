@@ -160,7 +160,16 @@ const route = useRoute()
 const id = ref(null)
 onMounted(()=>{
 id.value = route.params.id
+
+if (!localStorage.getItem('isPageRefreshed')) {
+    localStorage.setItem('isPageRefreshed', 'true');
+    window.location.reload();
+  } else {
+    localStorage.removeItem('isPageRefreshed');
+  }
 })
+
+
 </script>
 
 <style>

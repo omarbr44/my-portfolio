@@ -7,20 +7,49 @@
   onMounted (()=>{
   AOS.init()
   
+  const lenis = new Lenis({
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+  })
+/* 
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+ */
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
 })
 </script>
 <template>
     <RouterView />
 </template>
 
-<style>
+<style lang="scss">
 html {
-  scroll-behavior: smooth;
+  overscroll-behavior: none;
   
 }
-body{
-  overflow-x: hidden;
-}
+
+
+
+html::-webkit-scrollbar {
+            width: 11px;
+        }
+        
+        html::-webkit-scrollbar-track {
+            border-radius: 2px;
+            background-color: #0c0c0c
+        }
+        
+        html::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+          border: 3px solid transparent;
+           background-clip: content-box;
+            background-color: #ffffff;
+        }
+
 @font-face {
   font-family: 'din-next-arabic';
   src: url(./assets/fonts/din-next-arabic-bold.ttf);

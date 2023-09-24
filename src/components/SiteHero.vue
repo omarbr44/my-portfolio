@@ -103,9 +103,9 @@
         </svg>
         <p class="text-white my-1">انزل لتحرير الأفكار من خارج الصندوق</p>
       </div>
-    <!-- <div class="mk-big sm:pt-20 h-80 sm:h-96" >
+    <div class="mk-big sm:pt-20 h-80 sm:h-96" >
       <div class="w-4 h-4 bg-white ml-auto mr-auto mt-10"></div>
-    </div> -->
+    </div>
       </div>
 </section>
 <section class="bg-white" id="who">
@@ -290,6 +290,7 @@ ScrollTrigger.create({
   start: 'top 20%',
   end: 'bottom bottom',
   pin: '.left-imgs',
+
 });
 /* let tl4 = gsap.timeline({
   defaults: { duration: 1, ease: "none" },
@@ -303,17 +304,16 @@ ScrollTrigger.create({
   })
   tl4.to(document.querySelector('.mk-big div'),{ xPercent:-50, yPercent:-50,scaleX:89,scaleY:70});
  */
-/* gsap.to('.mk-big div',{
+gsap.to('.mk-big div',{
   scale: 100, stagger: 0.25, duration: 3,
   scrollTrigger: {
     trigger: '.mk-big',
-    start: '-=150',
-    end: '+='+innerHeight*1.3,
-    markers: true,
-    scrub: 3,
+    start: '-=250',
+    end: '+=200',
+      scrub: 3,
     pin : '.pinthis'
   }
-}) */
+})
 }) 
 
 </script>

@@ -363,9 +363,19 @@ waitForImages();
           </a>
 </section>
 
+<section class="qoute my-32 ">
+		<div class="container comma">
+		 <div class="flex flex-col">
+			<h1 class="text-4xl sm:text-xl text-white ml-auto">لا تحسبن <span class=" text-site-secondary">المجد</span> تمراً أنت اكله</h1>
+			<h1 class="text-4xl sm:text-xl text-white mr-auto">لن تبلغ <span class=" text-site-secondary">المجد</span> حتى تلعق الصبر</h1>
+		 </div>
+			<p class="text-xl text-gray-500"> </p>
+		</div>	
+</section>
+
 <div class="loading__wrapper">
-<div class="min-h-screen ">
-	<div class="loader" >
+<div class="min-h-screen">
+	<div class="loader">
       <div class="circles">
         <span class="one" style="background: white !important;"></span>
         <span class="two"></span>
@@ -453,6 +463,28 @@ waitForImages();
   z-index: 1;
   right: 0;
 }
+
+.comma{
+	position: relative;
+}
+/* .comma::before{
+	content: ',,';
+	position: absolute;
+	font-size: 5rem;
+	top: -125px;
+	right: 0px;
+	z-index: 3;
+	color: #fff;
+}
+.comma::after{
+	content: '،،';
+	position: absolute;
+	font-size: 5rem;
+	bottom: -125px;
+	left: 0px;
+	z-index: 3;
+	color: #fff;
+} */
 .header-line{
   position: relative;
   display: flex;

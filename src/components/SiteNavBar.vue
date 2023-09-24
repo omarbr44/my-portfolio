@@ -2,13 +2,13 @@
   
   <div v-if="bloc" class="fixed w-full h-screen z-50 right-0">
     <div style="--tw-bg-opacity: 0.6;" class="flex flex-col p-5 bg-site-primary w-full h-screen justify-center items-center rounded-lg " >
-      <a @click="showblock" href="#home">
+      <a @click="showblock('#home')" href="#home">
        <h3 class="text-white text-2xl mb-5 sm:text-lg">البداية</h3> 
       </a>
-      <a @click="showblock" href="#who"><h3 class="text-white text-2xl sm:text-lg mb-5">من نحن</h3> </a>
-      <a @click="showblock" href="#service"><h3 class="text-white text-2xl sm:text-lg mb-5">خدماتنا</h3> </a>
-      <a @click="showblock" href="#work"><h3 class="text-white text-2xl sm:text-lg mb-5">اعمالنا</h3> </a>
-      <a @click="showblock" href="#conta"><h3 class="text-white text-2xl sm:text-lg mb-5">تواصل معنا</h3> </a>
+      <a @click="showblock('#who')" href="#who"><h3 class="text-white text-2xl sm:text-lg mb-5">من نحن</h3> </a>
+      <a @click="showblock('#service')" href="#service"><h3 class="text-white text-2xl sm:text-lg mb-5">خدماتنا</h3> </a>
+      <a @click="showblock('#work')" href="#work"><h3 class="text-white text-2xl sm:text-lg mb-5">اعمالنا</h3> </a>
+      <a @click="showblock('#conta')" href="#conta"><h3 class="text-white text-2xl sm:text-lg mb-5">تواصل معنا</h3> </a>
     </div>
   </div>
   <div  class="fixed right-0 z-30 p-4 rounded-md ">
@@ -29,8 +29,10 @@
 import { ref } from 'vue';
 
 const bloc = ref(false)
-const showblock = ()=>{
+const showblock = (link)=>{
 	bloc.value = !bloc.value
+  if(link)
+  lenis.scrollTo(link)
 }
 </script>
 

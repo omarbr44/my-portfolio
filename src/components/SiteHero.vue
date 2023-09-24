@@ -1,5 +1,5 @@
 <template>
-    <section class=" overflow-auto">
+    <section >
         <div class="abb">
         <div class="glowing">
     
@@ -63,7 +63,7 @@
 <section >
     <div data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="1000" class=" mx-auto text-center lg:px-52 lg:pt-10 md:px-20 md:pt-32 sm:px-5 sm:pt-32 pb-40 sm:pb-20 bk-img">
+     data-aos-duration="1000" class="pinthis mx-auto text-center lg:px-52 lg:pt-10 md:px-20 md:pt-32 sm:px-5 sm:pt-32 pb-40 sm:pb-20 bk-img">
        
 <div data-aos="fade-down"
      data-aos-easing="linear"
@@ -103,9 +103,12 @@
         </svg>
         <p class="text-white my-1">انزل لتحرير الأفكار من خارج الصندوق</p>
       </div>
+    <!-- <div class="mk-big sm:pt-20 h-80 sm:h-96" >
+      <div class="w-4 h-4 bg-white ml-auto mr-auto mt-10"></div>
+    </div> -->
       </div>
 </section>
-<section class="bg-white pt-10" id="who">
+<section class="bg-white" id="who">
   <div class=" lg:h-screen h-auto" >
   <div class="container">
   <div class="txt-scm p-3 w-full flex justify-evenly flex-wrap" >
@@ -144,11 +147,12 @@
   لتخطي
   حدودنا 
        وإبهار 
-       عملائنا
+        عملائنا
+        ونسعى جاهدين للحفاظ عليها في كل عمل وتعاون مع عملائنا
 <br>
+        <span class=" bg-site-primary text-white p-2 mt-3 rounded-sm">
        وهذا هو سبب اختيارهم لنا
-
-  
+        </span>
       </h1>
       <h1 class=" text-6xl text-left mt-8">*</h1>
 </div>
@@ -157,7 +161,7 @@
 </div>
 <section class="about-sec mb-36 pb-8 mt-28 " id="service">
 <div class="flex">
-<div class=" w-1/2 sm:w-full h-screen sm:absolute" style="height:400vh;">
+<div class=" w-1/2 sm:w-full h-screen sm:absolute" style="height:200vh;">
 <div>
 <div class="left-imgs">
   <div style="position: absolute;
@@ -183,7 +187,7 @@
 </div>
 </div>
 </div>
-<div class="right-block sm:w-full w-1/2" style="height: 400vh;">
+<div class="right-block sm:w-full w-1/2" style="height: 200vh;">
  <div class=" container">
   <div class="right-block-1">
     <div class="  justify-center items-center px-10 hidden sm:flex">
@@ -240,8 +244,7 @@ onMounted(()=>{
       start: "top 20% ",
        end: "bottom 20%",
       pin: '.txt-scm',
-      scrub: 1,
-      marks:true
+      scrub: 3,
     }
   })
   let divv = gsap.utils.toArray(".lll div");
@@ -288,9 +291,31 @@ ScrollTrigger.create({
   end: 'bottom bottom',
   pin: '.left-imgs',
 });
-
-
+/* let tl4 = gsap.timeline({
+  defaults: { duration: 1, ease: "none" },
+    scrollTrigger: {
+      trigger: '.mk-big',
+      start: "-=350",
+       end: "+=300",
+      scrub: 1,
+      markers: true
+    };
+  })
+  tl4.to(document.querySelector('.mk-big div'),{ xPercent:-50, yPercent:-50,scaleX:89,scaleY:70});
+ */
+/* gsap.to('.mk-big div',{
+  scale: 100, stagger: 0.25, duration: 3,
+  scrollTrigger: {
+    trigger: '.mk-big',
+    start: '-=150',
+    end: '+='+innerHeight*1.3,
+    markers: true,
+    scrub: 3,
+    pin : '.pinthis'
+  }
+}) */
 }) 
+
 </script>
 
 <style scoped>
@@ -314,6 +339,9 @@ ScrollTrigger.create({
   transform-origin: bottom;
     transition: transform .5s;
     line-height: 1.5;
+}
+.mk-big div{
+  transform-origin: center;
 }
 .moveleft{
     transition: transform 0.3s;
